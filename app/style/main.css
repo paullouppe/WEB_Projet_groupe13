@@ -53,10 +53,16 @@ header{
   margin: auto;
   margin-left: 50px;
   margin-top: 25px;
+}
+#cred{
   font-size: 120%;
 }
+#adminDiv{
+  font-size: 100%;
+}
+
 #inscription{
-  margin-top: 35px;
+  margin-top: 28px;
   margin-right: 6px;
   float: right;
 }
