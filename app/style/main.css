@@ -1,7 +1,7 @@
 :root{                                          /*------------- PALETTE DE BASE -----------*/
     --background : #f5efff;
     --header : #9d9d9d89;
-    --accent : #f5efff1b;
+    --accent : #74747400;
     --accent-blue : #5614c2;
     --accent-green : #29ffe2;
 }
@@ -22,7 +22,7 @@ main{
 }
 
 header{
-  height: 60px;
+  height: 59px;
   background-color:var(--header);
   text-align: center;
 }
@@ -45,7 +45,9 @@ header{
 }
 #titre_site{
   margin:auto;
-  margin-top: auto;
+  margin-top: -5px;
+  margin-bottom: auto;
+  border: solid 2px black;
   font-size: 300%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 900;
@@ -75,9 +77,16 @@ header{
   margin-top: 10px;
 }
 
-#newacc{
+#connexion{                /*bouton connexion*/
     width: 60px;
     height: 43px;
-    margin-left: 19px;
-    margin-top: 65px;
+    margin-left: 0px;
+    margin-top: -76px;
+}
+
+#newacc{             /*bouton de creation nv compte*/
+    width: 60px;
+    height: 43px;
+    margin-left: 35px;
+    margin-top: 50px;
 }
