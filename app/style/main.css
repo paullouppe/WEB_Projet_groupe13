@@ -4,12 +4,65 @@
     --accent : #f5efff1b;
     --accent-red : #6d1af2;
     --accent-blue : #29ffe2;
-
 }
 
+main{
+  margin: auto;
+  width:600px;
+	height:400px;
+}
 .create{
+  margin-top: 85px;
+  margin-left: 179px;
+  width: 250px;
+  background-color:var(--background);
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
 
-    margin: auto;
-    width: 200px;
-    background-color:var(--accent-blue); /* test couleur pour voir les alignements*/
+header{
+  height: 50px;
+  background-color:var(--header);
+  text-align: center;
+}
+.head{
+  padding: 5px;
+  margin: auto;
+  width: 450px;
+}
+#banniere{
+  float: right;
+  width: 40px;
+  height: 43px;
+  margin-right: 0;
+  margin-top: 3px;
+}
+#accueil{
+  float: left;
+  margin-top: 14px;
+  background-color: var(--accent);
+}
+#h{
+  margin:auto;
+  margin-top: 3px;
+  border: 1px solid black;
+  font-size: 180%;
+}
+#inscrire{                  /* */
+  margin: auto;
+  margin-left: 50px;
+  margin-top: 25px;
+  font-size: 120%;
+}
+#inscription{
+  margin-top: 35px;
+  margin-right: 6px;
+  float: right;
+}
+#acc{                       /* photo de profil de base*/
+  width: 40px;
+  height: 43px;
+  margin-left: 200px;
+  margin-top: 10px;
 }
