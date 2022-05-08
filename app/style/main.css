@@ -119,7 +119,7 @@ header{
 
 
 
-.create_election{
+.create_election{     /* la div qui correspond au cadran de création */
   margin-top: 85px;
   margin-left: auto;
   width: 600px;
@@ -129,7 +129,40 @@ header{
   border: 1px solid black;
 }
 
-#title_admin{
+#title_admin{     /* div titre pour changer la police + position et tout*/
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   ;
+}
+
+#date_admin{      /* pareil*/
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#description_admin{  /* same */
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}     
+
+#submit_election{                  /*bouton crea admin*/
+    border: 0;                       
+    line-height: 2.2;
+    padding: 0 5px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 15px;
+    background-color: #BCFFFF;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+#submit_election:hover {                 /*hover bouton creation admin*/
+    background-color: #65DFDF;
+}
+#submit_election:active {                /* effet bouton crea admin*/
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
