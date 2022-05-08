@@ -47,10 +47,10 @@ header{
   margin:auto;
   margin-top: auto;
   margin-bottom: auto;
-  border: solid 2px black;
-  border-radius: 30px;
+  border: solid 1px black;
+  border-radius:15px;
   font-size: 250%;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:'Courier New', Courier, monospace;
   font-weight: 900;
   color:var(--accent-blue)
 }
@@ -127,4 +127,9 @@ header{
   height: 300px;
   border-radius: 30px;
   border: 1px solid black;
+}
+
+#title_admin{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  ;
 }
