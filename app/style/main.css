@@ -130,16 +130,18 @@ header{
 }
 
 #title_admin{     /* div titre pour changer la police + position et tout*/
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-  ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 30px;
 }
 
 #date_admin{      /* pareil*/
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 40px;
 }
 
 #description_admin{  /* same */
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+margin-top: 50px;
 }     
 
 #submit_election{                  /*bouton crea admin*/
@@ -158,6 +160,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                                       rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
+    margin-left: 600px;
 }
 #submit_election:hover {                 /*hover bouton creation admin*/
     background-color: #65DFDF;
