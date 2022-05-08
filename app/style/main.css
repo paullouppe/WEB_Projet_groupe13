@@ -1,9 +1,9 @@
 :root{                                          /*------------- PALETTE DE BASE -----------*/
     --background : #f5efff;
-    --header : #9d9d9d89;
+    --header : #b6b6b6;
     --accent : #74747400;
-    --accent-blue : #5614c2;
-    --accent-green : #29ffe2;
+    --accent-blue : #5528bd;
+    --accent-green : #15ebcf;
 }
 
 main{
@@ -45,13 +45,14 @@ header{
 }
 #titre_site{
   margin:auto;
-  margin-top: -5px;
+  margin-top: auto;
   margin-bottom: auto;
   border: solid 2px black;
-  font-size: 300%;
+  border-radius: 30px;
+  font-size: 250%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 900;
-  color: var(--accent-blue);
+  color:var(--accent-blue)
 }
 #inscrire{                  /* */
   margin: auto;
@@ -90,9 +91,9 @@ header{
     margin-left: 35px;
     margin-top: 50px;
 }
-/*bouton bleu*/
-.styled {
-    border: 0;
+                                              
+.styled {                       /*bouton bleu dans la vue admin menu*/
+    border: 0;                       
     line-height: 2.2;
     padding: 0 5px;
     font-size: 1rem;
@@ -108,12 +109,22 @@ header{
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
-
-.styled:hover {
+.styled:hover {                 /*hover bouton bleu vue admin menu*/
     background-color: #65DFDF;
 }
-
-.styled:active {
+.styled:active {                /* effet bouton bleu vue admin (menu)*/
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
+
+.create_election{
+  margin-top: 85px;
+  margin-left: auto;
+  width: 600px;
+  background-color: var(--background);
+  height: 300px;
+  border-radius: 30px;
+  border: 1px solid black;
 }
