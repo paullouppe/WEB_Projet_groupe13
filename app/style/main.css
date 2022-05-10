@@ -67,7 +67,7 @@ header{
 }
 
 #inscription{
-  margin-top: 28px;
+  margin-top: 15px;
   margin-right: 6px;
   float: right;
 }
@@ -182,7 +182,7 @@ margin-top: 50px;
  flex-direction: column;
   border: 1px solid black;
 }
-.edit, .fermer, .voter, .results{ /*Boutton pour modifier la campagne*/
+.edit, .fermer, .voter, .results, .connexion{ /*Boutton pour modifier la campagne*/
   display: inline;
   border: 0;
   line-height: 2.2;
