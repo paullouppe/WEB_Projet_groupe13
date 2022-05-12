@@ -1,98 +1,113 @@
-:root{                                          /*------------- PALETTE DE BASE -----------*/
-    --background : #f5efff;
-    --header : #b6b6b6;
-    --accent : #74747400;
-    --accent-blue : #5528bd;
-    --accent-green : #15ebcf;
+:root {
+    /*------------- PALETTE DE BASE -----------*/
+    --background: #f5efff;
+    --header: #b6b6b6;
+    --accent: #74747400;
+    --accent-blue: #5528bd;
+    --accent-green: #15ebcf;
 }
 
-main{
-  margin: auto;
-  width:600px;
-	height:400px;
-}
-.create{
-  margin-top: 85px;
-  margin-left: 179px;
-  width: 250px;
-  background-color:var(--background);
-  height: 300px;
-  border-radius: 10px;
-  border: 1px solid black;
+main {
+    margin: auto;
+    width: 600px;
+    height: 400px;
 }
 
-header{
-  height: 59px;
-  background-color:var(--header);
-  text-align: center;
-}
-.head{
-  padding: 5px;
-  margin: auto;
-  width: 450px;
-}
-#banniere{
-  float: right;
-  width: 40px;
-  height: 43px;
-  margin-right: 0;
-  margin-top: 3px;
-}
-#accueil{
-  float: left;
-  margin-top: 14px;
-  background-color: var(--accent);
-}
-#titre_site{
-  margin:auto;
-  margin-top: auto;
-  margin-bottom: auto;
-  border: solid 1px black;
-  border-radius:15px;
-  font-size: 250%;
-  font-family:'Courier New', Courier, monospace;
-  font-weight: 900;
-  color:var(--accent-blue)
-}
-#inscrire{                  /* */
-  margin: auto;
-  margin-left: 50px;
-  margin-top: 25px;
-}
-#cred{
-  font-size: 120%;
-}
-#adminDiv{
-  font-size: 100%;
+.create {
+    margin-top: 85px;
+    margin-left: 179px;
+    width: 250px;
+    background-color: var(--background);
+    height: 300px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
-#inscription{
-  margin-top: 15px;
-  margin-right: 6px;
-  float: right;
-}
-#acc{                       /* photo de profil de base*/
-  width: 40px;
-  height: 43px;
-  margin-left: 200px;
-  margin-top: 10px;
+header {
+    height: 59px;
+    background-color: var(--header);
+    text-align: center;
 }
 
-#connexion{                /*bouton connexion*/
+.head {
+    padding: 5px;
+    margin: auto;
+    width: 450px;
+}
+
+#banniere {
+    float: right;
+    width: 40px;
+    height: 43px;
+    margin-right: 0;
+    margin-top: 3px;
+}
+
+#accueil {
+    float: left;
+    margin-top: 14px;
+    background-color: var(--accent);
+}
+
+#titre_site {
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: solid 1px black;
+    border-radius: 15px;
+    font-size: 250%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: var(--accent-blue)
+}
+
+#inscrire {
+    /* */
+    margin: auto;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+#cred {
+    font-size: 120%;
+}
+
+#adminDiv {
+    font-size: 100%;
+}
+
+#inscription {
+    margin-top: 15px;
+    margin-right: 6px;
+    float: right;
+}
+
+#acc {
+    /* photo de profil de base*/
+    width: 40px;
+    height: 43px;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+#connexion {
+    /*bouton connexion*/
     width: 60px;
     height: 43px;
     margin-left: 0px;
     margin-top: -76px;
 }
 
-#newacc{             /*bouton de creation nv compte*/
+#newacc {
+    /*bouton de creation nv compte*/
     width: 60px;
     height: 43px;
     margin-left: 35px;
     margin-top: 50px;
 }
 
-.styled {                       /*bouton bleu dans la vue admin menu*/
+.styled {
+    /*bouton bleu dans la vue admin menu*/
     border: 0;
     line-height: 2.2;
     padding: 0 5px;
@@ -102,49 +117,51 @@ header{
     text-shadow: 1px 1px 1px #000;
     border-radius: 15px;
     background-color: #BCFFFF;
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
-.styled:hover {                 /*hover bouton bleu vue admin menu*/
+
+.styled:hover {
+    /*hover bouton bleu vue admin menu*/
     background-color: #65DFDF;
 }
-.styled:active {                /* effet bouton bleu vue admin (menu)*/
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
+
+.styled:active {
+    /* effet bouton bleu vue admin (menu)*/
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-
-
-.create_election{     /* la div qui correspond au cadran de création */
-  margin-top: 85px;
-  margin-left: auto;
-  width: 600px;
-  background-color: var(--background);
-  height: 300px;
-  border-radius: 30px;
-  border: 1px solid black;
+.create_election {
+    /* la div qui correspond au cadran de création */
+    margin-top: 85px;
+    margin-left: auto;
+    width: 600px;
+    background-color: var(--background);
+    height: 300px;
+    border-radius: 30px;
+    border: 1px solid black;
 }
 
-#title_admin{     /* div titre pour changer la police + position et tout*/
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-top: 30px;
+#title_admin {
+    /* div titre pour changer la police + position et tout*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
 }
 
-#date_admin{      /* pareil*/
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-top: 40px;
+#date_admin {
+    /* pareil*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 40px;
 }
 
-#description_admin{  /* same */
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-margin-top: 50px;
+#description_admin {
+    /* same */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
 }
 
-#submit_election{                  /*bouton crea admin*/
+#submit_election {
+    /*bouton crea admin*/
     border: 0;
     line-height: 2.2;
     padding: 0 5px;
@@ -154,66 +171,78 @@ margin-top: 50px;
     text-shadow: 1px 1px 1px #000;
     border-radius: 15px;
     background-color: #BCFFFF;
-    background-image: linear-gradient(to top left,
-                                      rgba(0, 0, 0, .2),
-                                      rgba(0, 0, 0, .2) 30%,
-                                      rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
     margin-left: 600px;
 }
-#submit_election:hover {                 /*hover bouton creation admin*/
+
+#submit_election:hover {
+    /*hover bouton creation admin*/
     background-color: #65DFDF;
 }
-#submit_election:active {                /* effet bouton crea admin*/
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
+
+#submit_election:active {
+    /* effet bouton crea admin*/
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
-#elections{ /*div pour la grille*/
-  margin: 2em;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+
+#elections {
+    /*div pour la grille*/
+    margin: 2em;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-#election1{ /*premiere carte election*/
-  background-color: var(--background);
- border-radius: 5px;
- display: flex;
- flex-direction: column;
-  border: 1px solid black;
+
+#election1 {
+    /*premiere carte election*/
+    background-color: var(--background);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
 }
-.edit, .fermer, .voter, .results, .connexion{ /*Boutton pour modifier la campagne*/
-  display: inline;
-  border: 0;
-  line-height: 2.2;
-  font-size: 1rem;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  border-radius: 15px;
-  background-color: #BCFFFF;
-  background-image: linear-gradient(to top left,
-                                    rgba(0, 0, 0, .2),
-                                    rgba(0, 0, 0, .2) 30%,
-                                    rgba(0, 0, 0, 0));
-  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-              inset -2px -2px 3px rgba(0, 0, 0, .6);
+
+.edit,
+.fermer,
+.voter,
+.results,
+.connexion {
+    /*Boutton pour modifier la campagne*/
+    display: inline;
+    border: 0;
+    line-height: 2.2;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 15px;
+    background-color: #BCFFFF;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
-.edit:hover, .fermer:hover {                 /*hover bouton creation admin*/
+
+.edit:hover,
+.fermer:hover {
+    /*hover bouton creation admin*/
     background-color: #65DFDF;
 }
-.edit:active, .fermer:active {                /* effet bouton crea admin*/
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                inset 2px 2px 3px rgba(0, 0, 0, .6);
+
+.edit:active,
+.fermer:active {
+    /* effet bouton crea admin*/
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
-#election2{
- border-radius: 5px;
- display: flex;
- flex-direction: column;
-  border: 1px solid black;
+
+#election2 {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
 }
-#election3{
- border-radius: 5px;
- display: flex;
- flex-direction: column;
-  border: 1px solid black;
+
+#election3 {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
 }
