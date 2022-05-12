@@ -196,6 +196,7 @@ header {
 
 .electionCard {
     /*premiere carte election*/
+    text-align: center;
     background-color: var(--background);
     border-radius: 5px;
     display: flex;
