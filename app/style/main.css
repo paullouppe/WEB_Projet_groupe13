@@ -194,7 +194,7 @@ header {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-#election1 {
+.electionCard {
     /*premiere carte election*/
     background-color: var(--background);
     border-radius: 5px;
@@ -231,18 +231,4 @@ header {
 .fermer:active {
     /* effet bouton crea admin*/
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
-}
-
-#election2 {
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-}
-
-#election3 {
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
 }
