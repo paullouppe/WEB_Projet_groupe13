@@ -21,5 +21,7 @@ function createCard(election) {
         </div>`
     );
 }
-
+$("#creation_bouton").click((e) => {
+    window.location.href = "./admin_creation.html"
+});
 showElectionsAdmin();
