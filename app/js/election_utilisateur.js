@@ -16,13 +16,13 @@ function showElectionsInvite() {
         });
     });
 }
-/* */
+
 function createCard(election, passe) {
     console.log(election);
     $(`#elections_${((passe) ? 'passees' : 'en_cours')}`).append(
         `<div class="electionCard">
             <p>${election.titre}</p>
-            <button type="button" class="results">Résultats !</button>
+            <button class="results">Résultats !</button>
         </div>`
     );
 }

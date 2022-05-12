@@ -160,7 +160,7 @@ header {
     margin-top: 50px;
 }
 
-#submit_election {
+button {
     /*bouton crea admin*/
     border: 0;
     line-height: 2.2;
@@ -173,15 +173,14 @@ header {
     background-color: #BCFFFF;
     background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
-    margin-left: 600px;
 }
 
-#submit_election:hover {
+button:hover {
     /*hover bouton creation admin*/
     background-color: #65DFDF;
 }
 
-#submit_election:active {
+button:active {
     /* effet bouton crea admin*/
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
@@ -202,34 +201,4 @@ header {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-}
-
-.edit,
-.fermer,
-.voter,
-.results,
-.connexion {
-    /*Boutton pour modifier la campagne*/
-    display: inline;
-    border: 0;
-    line-height: 2.2;
-    font-size: 1rem;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 15px;
-    background-color: #BCFFFF;
-    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
-}
-
-.edit:hover,
-.fermer:hover {
-    /*hover bouton creation admin*/
-    background-color: #65DFDF;
-}
-
-.edit:active,
-.fermer:active {
-    /* effet bouton crea admin*/
-    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
