@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 :root {
     /*------------- PALETTE DE BASE -----------*/
     --background: #f5efff;
@@ -92,6 +93,91 @@ header {
 
 #connexion {
     /*bouton connexion*/
+=======
+:root{                                          /*------------- PALETTE DE BASE -----------*/
+    --background : #f5efff;
+    --header : #b6b6b6;
+    --accent : #74747400;
+    --accent-blue : #5528bd;
+    --accent-green : #15ebcf;
+}
+html{
+  background-image: url("fond.png");
+}
+main{
+  margin: auto;
+  width:600px;
+	height:400px;
+}
+.create{
+  margin-top: 85px;
+  margin-left: 179px;
+  width: 250px;
+  background-color:var(--background);
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+header{
+  height: 59px;
+  background-color:var(--header);
+  text-align: center;
+}
+.head{
+  padding: 5px;
+  margin: auto;
+  width: 450px;
+}
+#banniere{
+  float: right;
+  width: 40px;
+  height: 43px;
+  margin-right: 0;
+  margin-top: 3px;
+}
+#accueil{
+  float: left;
+  margin-top: 14px;
+  background-color: var(--accent);
+}
+#titre_site{
+  margin:auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  border: solid 1px black;
+  border-radius:15px;
+  font-size: 250%;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 900;
+  color:var(--accent-blue)
+}
+#inscrire{                  /* */
+  margin: auto;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+#cred{
+  font-size: 120%;
+}
+#adminDiv{
+  font-size: 100%;
+}
+
+#inscription{
+  margin-top: 15px;
+  margin-right: 6px;
+  float: right;
+}
+#acc{                       /* photo de profil de base*/
+  width: 40px;
+  height: 43px;
+  margin-left: 200px;
+  margin-top: 10px;
+}
+
+#connexion{                /*bouton connexion*/
+>>>>>>> Stashed changes
     width: 60px;
     height: 43px;
     margin-left: 0px;
@@ -192,6 +278,7 @@ button:active {
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
+<<<<<<< Updated upstream
 
 .electionCard {
     /*premiere carte election*/
@@ -202,3 +289,22 @@ button:active {
     flex-direction: column;
     border: 1px solid black;
 }
+=======
+.vs{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 350%;
+  width: 300px;
+  height: 255px;
+  margin: auto;
+  margin-top: 165px;
+  background-image: url("eclair.png") ;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.vs > h1{
+  text-align: center;
+  padding-top: 50px;
+  padding-right: 22px;
+}
+>>>>>>> Stashed changes
