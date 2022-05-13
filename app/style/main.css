@@ -4,7 +4,7 @@
     --header: #424242;
     --accent: #74747400;
     --accent-blue: #5d2dcd;
-    --accent-blue-hover : #763dfc;
+    --accent-blue-hover: #763dfc;
     --accent-green: #15ebcf;
 }
 
@@ -14,10 +14,10 @@ main {
     height: 400px;
 }
 
-html{
-  background-image: url("../fond.png");
-  font-family: 'Courier New', Courier, monospace;
-  font-style: black;
+html {
+    background-image: url("../fond.png");
+    font-family: 'Courier New', Courier, monospace;
+    font-style: black;
 }
 
 .create {
@@ -36,7 +36,6 @@ header {
     background-color: var(--header);
     text-align: center;
 }
-
 
 .head {
     padding: 5px;
@@ -67,7 +66,7 @@ header {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
     color: var(--accent-blue-hover);
-    background-color : rgb(235, 235, 235);
+    background-color: rgb(235, 235, 235);
 }
 
 #inscrire {
@@ -125,14 +124,16 @@ header {
     text-align: center;
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 1px #000;
-    background-color:rgb(211, 211, 211);
+    background-color: rgb(211, 211, 211);
     background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
+
 .styled:hover {
     /* ACCUEIL AUSSI*/
     background-color: #e6e6e6;
 }
+
 .styled:active {
     /* same*/
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
@@ -149,7 +150,9 @@ header {
     border: 1px solid black;
 }
 
-#title_admin, #date_admin, #description_admin {
+#title_admin,
+#date_admin,
+#description_admin {
     /* div titre pour changer la police + position et tout*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 30px;
@@ -164,7 +167,6 @@ button {
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
-
     background-color: var(--accent-blue);
     background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
@@ -180,15 +182,15 @@ button:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-#creation_bouton{
-  margin-top: 15px;
-  margin-left: 30px;
-  width: 150px;
+#creation_bouton {
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 150px;
 }
 
-#submit_bouton{
-  width: 500px;
-  margin-left: 500px;
+#submit_bouton {
+    width: 500px;
+    margin-top: 20px;
 }
 
 .elections {
@@ -210,85 +212,102 @@ button:active {
     font-weight: bold;
 }
 
-#banniere{
-  margin-right: 15px; /* Pour bouger l'img de photo de profil*/
+#banniere {
+    margin-right: 15px;
+    /* Pour bouger l'img de photo de profil*/
 }
+
 
 /* TEST POUR LA DECO EN POPUP*/
 
+
 /* The popup form - hidden by default */
+
 .form-popup {
-  display: none;
-  position: fixed;
-  top: 75px;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
+    display: none;
+    position: fixed;
+    top: 75px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
 }
+
 
 /* Style du popup */
+
 .form-container {
-  max-width: 200px;
-  padding: 10px;
-  background-image: url("../fond.png");
+    max-width: 200px;
+    padding: 10px;
+    background-image: url("../fond.png");
 }
+
 
 /* Style des bouton */
+
 .form-container .btn {
-  background-color: var(--accent-green);
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom:10px;
-  opacity: 0.8;
+    background-color: var(--accent-green);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
 }
+
 
 /* Bouton  annuler  */
+
 .form-container .cancel {
-  background-color: var(--accent-blue);
+    background-color: var(--accent-blue);
 }
+
 
 /* Ptits hoverrrr */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
+
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
 }
 
-.vs{
-  text-align: center;
-  width: 300px;
-  height: 200px;
-  margin: auto;
-  margin-top: 20px;
-  font-size: 3em;
-}
-.vs > h1{
-  margin-top: 200px;
-  text-align: center;
-  margin-bottom: -150px;
+.vs {
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 3em;
 }
 
-#eclair{
-  width: 100px;
-  height: 200px;
+.vs>h1 {
+    margin-top: 200px;
+    text-align: center;
+    margin-bottom: -150px;
 }
-.choix{
-  margin-top: 0px;
-  margin-left: 9em;
-  margin-right: 9em;
-  display: grid;
-  grid-gap: 200px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+#eclair {
+    width: 100px;
+    height: 200px;
 }
-#choix1, #choix2{
-  height: 200px;
-  width: 150px;
-  text-align: center;
-  background-color: var(--background);
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-  font-weight: bold;
+
+.choix {
+    margin-top: 0px;
+    margin-left: 9em;
+    margin-right: 9em;
+    display: grid;
+    grid-gap: 200px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+#choix1,
+#choix2 {
+    height: 200px;
+    width: 150px;
+    text-align: center;
+    background-color: var(--background);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    font-weight: bold;
 }

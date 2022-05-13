@@ -1,40 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Connexion</title>
-    <link rel="stylesheet" href="./style/main.css"/>
-  </head>
-      <header>
-          <div class="head">
-            <div id="titre_site">
-              BEST GIF
-            </div>
-          </div>
-      </header>
-      <main>
-    <div class="create_election">
-      <form id="inscrire">
-        <div id="param_election">
-          <div id="title_admin">
-            <label for="title">Titre de l'élection</label>
-            <input type="text"/>
-          </div>
-          <div id="date_admin">
-            <label for="date">Date</label>
-            <input type="text"/>
-          </div>
-
-          <div id="description_admin">
-            <label for="description">Description</label>
-            <input type="text" style="height: 40px; width: 250px;"/>
-          </div>
-
+    <link rel="stylesheet" href="./style/main.css" />
+</head>
+<header>
+    <div class="head">
+        <div id="titre_site">
+            BEST GIF
+        </div>
     </div>
-    </main>
+</header>
+<main>
+    <div class="create_election">
+        <form id="inscrire">
+            <div id="param_election">
+                <div id="title_admin">
+                    <label for="title">Titre de l'élection</label>
+                    <input type="text" />
+                </div>
+                <div id="date_admin">
+                    <label for="date">Date debut</label>
+                    <input type="date" />
+                </div>
+                <div id="date_admin">
+                    <label for="date">Date fin</label>
+                    <input type="date" />
+                </div>
 
-    <body>
-      <button id="submit_bouton">Envoyer !</button>
-    </body>
-    
+                <div id="description_admin">
+                    <label for="description">Description</label>
+                    <input type="text" style="height: 40px; width: 250px;" />
+                </div>
+                <button id="submit_bouton">Envoyer !</button>
+
+            </div>
+
+</main>
+
 </html>

@@ -15,7 +15,7 @@ function showElectionsAdmin() {
 function createCard(election) {
     $(`#elections_admin`).append(
         `<div class="electionCard">
-            <p>${election.partie}</p>
+            <p>${election.titre}</p>
             <button class="modifier">Modifier</button>
             <button class="fermer">Fermer</button>
         </div>`
@@ -30,8 +30,8 @@ showElectionsAdmin();
 
 function openForm() { //ouvrir le form de déconnexion
     document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() { //et le fermer 
+}
+
+function closeForm() { //et le fermer 
     document.getElementById("myForm").style.display = "none";
-  }
+}
