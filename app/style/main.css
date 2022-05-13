@@ -1,9 +1,10 @@
 :root {
     /*------------- PALETTE DE BASE -----------*/
     --background: #f5efff;
-    --header: #b6b6b6;
+    --header: #424242;
     --accent: #74747400;
-    --accent-blue: #5528bd;
+    --accent-blue: #5d2dcd;
+    --accent-blue-hover : #763dfc;
     --accent-green: #15ebcf;
 }
 
@@ -11,6 +12,12 @@ main {
     margin: auto;
     width: 600px;
     height: 400px;
+}
+
+html{
+  background-image: url("../fond.png");
+  font-family: 'Courier New', Courier, monospace;
+  font-style: black;
 }
 
 .create {
@@ -21,6 +28,7 @@ main {
     height: 300px;
     border-radius: 10px;
     border: 1px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 header {
@@ -28,6 +36,7 @@ header {
     background-color: var(--header);
     text-align: center;
 }
+
 
 .head {
     padding: 5px;
@@ -53,12 +62,12 @@ header {
     margin: auto;
     margin-top: auto;
     margin-bottom: auto;
-    border: solid 1px black;
-    border-radius: 15px;
+    border: solid 1px rgb(0, 0, 0);
     font-size: 250%;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 900;
-    color: var(--accent-blue)
+    color: var(--accent-blue-hover);
+    background-color : rgb(235, 235, 235);
 }
 
 #inscrire {
@@ -107,27 +116,25 @@ header {
 }
 
 .styled {
-    /*bouton bleu dans la vue admin menu*/
+    /*BOUTON ACCUEIL */
     border: 0;
+    margin-left: 10px;
     line-height: 2.2;
     padding: 0 5px;
     font-size: 1rem;
     text-align: center;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-shadow: 1px 1px 1px #000;
-    border-radius: 15px;
-    background-color: #BCFFFF;
+    background-color:rgb(209, 209, 209);
     background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
-
 .styled:hover {
-    /*hover bouton bleu vue admin menu*/
-    background-color: #65DFDF;
+    /* ACCUEIL AUSSI*/
+    background-color: #e6e6e6;
 }
-
 .styled:active {
-    /* effet bouton bleu vue admin (menu)*/
+    /* same*/
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
@@ -142,22 +149,10 @@ header {
     border: 1px solid black;
 }
 
-#title_admin {
+#title_admin, #date_admin, #description_admin {
     /* div titre pour changer la police + position et tout*/
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-top: 30px;
-}
-
-#date_admin {
-    /* pareil*/
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 40px;
-}
-
-#description_admin {
-    /* same */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 50px;
 }
 
 button {
@@ -169,20 +164,31 @@ button {
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
-    border-radius: 15px;
-    background-color: #BCFFFF;
+
+    background-color: var(--accent-blue);
     background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
 button:hover {
     /*hover bouton creation admin*/
-    background-color: #65DFDF;
+    background-color: var(--accent-blue-hover);
 }
 
 button:active {
     /* effet bouton crea admin*/
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+#creation_bouton{
+  margin-top: 15px;
+  margin-left: 30px;
+  width: 150px;
+}
+
+#submit_bouton{
+  width: 500px;
+  margin-left: 500px;
 }
 
 .elections {
@@ -201,4 +207,9 @@ button:active {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
+    font-weight: bold;
+}
+
+#banniere{
+  margin-right: 15px; /* Pour bouger l'img de photo de profil*/
 }
