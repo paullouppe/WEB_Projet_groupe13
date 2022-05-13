@@ -254,3 +254,41 @@ button:active {
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+.vs{
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 3em;
+}
+.vs > h1{
+  margin-top: 200px;
+  text-align: center;
+  margin-bottom: -150px;
+}
+
+#eclair{
+  width: 100px;
+  height: 200px;
+}
+.choix{
+  margin-top: 0px;
+  margin-left: 9em;
+  margin-right: 9em;
+  display: grid;
+  grid-gap: 200px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+#choix1, #choix2{
+  height: 200px;
+  width: 150px;
+  text-align: center;
+  background-color: var(--background);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  font-weight: bold;
+}
