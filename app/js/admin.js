@@ -25,3 +25,13 @@ $("#creation_bouton").click((e) => {
     window.location.href = "./admin_creation.html"
 });
 showElectionsAdmin();
+
+
+
+function openForm() { //ouvrir le form de déconnexion
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() { //et le fermer 
+    document.getElementById("myForm").style.display = "none";
+  }

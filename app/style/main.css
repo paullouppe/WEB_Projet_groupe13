@@ -125,7 +125,7 @@ header {
     text-align: center;
     color: rgb(0, 0, 0);
     text-shadow: 1px 1px 1px #000;
-    background-color:rgb(209, 209, 209);
+    background-color:rgb(211, 211, 211);
     background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
@@ -212,4 +212,45 @@ button:active {
 
 #banniere{
   margin-right: 15px; /* Pour bouger l'img de photo de profil*/
+}
+
+/* TEST POUR LA DECO EN POPUP*/
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 75px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Style du popup */
+.form-container {
+  max-width: 200px;
+  padding: 10px;
+  background-image: url("../fond.png");
+}
+
+/* Style des bouton */
+.form-container .btn {
+  background-color: var(--accent-green);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Bouton  annuler  */
+.form-container .cancel {
+  background-color: var(--accent-blue);
+}
+
+/* Ptits hoverrrr */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
 }

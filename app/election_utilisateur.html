@@ -8,20 +8,20 @@
 </head>
 <header>
 
-    </html>
-    <img id="banniere" src="./img/myacc.png" alt="">
-    <div id="accueil">
-        <form action="http://www.google.com">
-            <button class="favorite styled" type="button">
-        ACCUEIL
-      </button>
-        </form>
+</html>
+<img id="banniere" src="./img/myacc.png" alt="" onclick="openForm()">
+<div id="accueil">
+    <form action="http://www.google.com">
+        <button class="favorite styled" type="button">
+            ACCUEIL
+        </button>
+    </form>
+</div>
+<div class="head">
+    <div id="titre_site">
+        BEST GIF
     </div>
-    <div class="head">
-        <div id="titre_site">
-            BEST GIF
-        </div>
-    </div>
+</div>
 </header>
 
 <body>
@@ -32,6 +32,15 @@
     <h1>Elections passées</h1>
     <div class="elections" id="elections_passees">
 
+    </div>
+
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Menu</h1>
+
+            <button type="submit" class="btn">Déconnexion</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Fermer</button>
+        </form>
     </div>
 </body>
 
