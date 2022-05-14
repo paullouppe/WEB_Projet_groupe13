@@ -1,3 +1,7 @@
+if (localStorage.getItem('user') == undefined || localStorage.getItem('user') == '') {
+    window.location.href = './connexion.html';
+}
+
 $('#add_gif').click((e) => {
     $('#candidat_input').append(`<input class="candidats" required="required" type="text"/>`);
 });

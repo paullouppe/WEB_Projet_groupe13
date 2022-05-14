@@ -1,3 +1,7 @@
+if (localStorage.getItem('user') == undefined || localStorage.getItem('user') == '') {
+    window.location.href = './connexion.html';
+}
+
 function showElectionsAdmin() {
     var settings = {
         "url": "http://bestgifapi-env.eba-mqsauu4a.us-east-1.elasticbeanstalk.com/api/election",
@@ -42,6 +46,7 @@ $("#creation_bouton").click((e) => {
 showElectionsAdmin();
 
 $("#btn_deconnexion").click((e) => {
+    localStorage.removeItem('user');
     window.location.href = "./connexion.html"
 })
 

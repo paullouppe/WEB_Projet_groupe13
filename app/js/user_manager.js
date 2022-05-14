@@ -1,3 +1,10 @@
+if (localStorage.getItem('user') == "admin") {
+    window.location.href = "./admin.html";
+} else if (localStorage.getItem('user') != undefined) {
+    window.location.href = "./election_utilisateur.html";
+}
+
+
 $('#inscription_button').click((e) => {
     if ($("#password1").val() != $("#password2").val()) {
         $("#cred").append('<span style="color: red; font-size: 0.5em">Mot de passe doivent être égaux</span>');
@@ -25,7 +32,7 @@ $('#connexion_button').click((e) => {
         let p = $('#password1').val().hashCode();
         response.forEach((user) => {
             if (u == user.username && p == user.password) {
-                setCookie("id", user.id, 1);
+                localStorage.setItem("user", user.role);
                 window.location.href = (user.role == 'admin') ? './admin.html' : './election_utilisateur.html';
                 return;
             }
@@ -37,18 +44,6 @@ $('#connexion_button').click((e) => {
 $('#newacc_button').click((e) => {
     window.location.href = "./creation.html";
 });
-
-
-//cookies handling
-function setCookie(name, value, days) {
-    var expires = "";
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/election_utilisateur.html";
-}
 
 //hash
 String.prototype.hashCode = function() {

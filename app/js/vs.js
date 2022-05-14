@@ -1,6 +1,10 @@
+if (localStorage.getItem('user') == undefined || localStorage.getItem('user') == '') {
+    window.location.href = './connexion.html';
+}
+
 //----------------------------------------------VERSUS------------------------------------------------------------
 var settings = {
-    "url": "http://bestgifapi-env.eba-mqsauu4a.us-east-1.elasticbeanstalk.com/api/election/10",
+    "url": "http://bestgifapi-env.eba-mqsauu4a.us-east-1.elasticbeanstalk.com/api/election/" + localStorage.getItem('versus'),
     "method": "GET",
     "timeout": 0,
 };
@@ -46,7 +50,7 @@ function vote(candidat, response) {
 
 //----------------------------------------------POPUP------------------------------------------------------------
 $("#btn_deconnexion").click((e) => {
-    $("#buttonch")
+    localStorage.removeItem('user');
     window.location.href = "./connexion.html"
 })
 
