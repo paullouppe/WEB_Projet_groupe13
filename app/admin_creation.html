@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Connexion</title>
+    <title>Creation admin</title>
     <link rel="stylesheet" href="./style/main.css" />
 </head>
 <header>
@@ -15,29 +15,31 @@
 </header>
 <main>
     <div class="create_election">
-        <form id="inscrire">
+        <div id="inscrire">
             <div id="param_election">
                 <div id="title_admin">
                     <label for="title">Titre de l'élection</label>
-                    <input type="text" />
+                    <input id="titre" required="required" type="text" />
                 </div>
                 <div id="date_admin">
                     <label for="date">Date debut</label>
-                    <input type="date" />
+                    <input id="datedebut" required="required" type="date" />
                 </div>
                 <div id="date_admin">
                     <label for="date">Date fin</label>
-                    <input type="date" />
+                    <input id="datefin" required="required" type="date" />
                 </div>
 
-                <div id="description_admin">
-                    <label for="description">Description</label>
-                    <input type="text" style="height: 40px; width: 250px;" />
+                <div id="candidat_input">
+                    <button id="add_gif">ajouter gif</button>
                 </div>
+
                 <button id="submit_bouton">Envoyer !</button>
 
             </div>
-
+        </div>
 </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="./js/creation_election.js"></script>
 
 </html>

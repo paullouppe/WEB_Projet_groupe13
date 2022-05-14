@@ -28,7 +28,6 @@ function createCard(election, passe) {
 }
 showElectionsInvite();
 
-
 function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
@@ -43,6 +42,10 @@ function getCookie(cname) {
         }
     }
     return "";
+}
+
+function eraseCookie(name) {
+    document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
 function openForm() { //ouvrir le form de déconnexion

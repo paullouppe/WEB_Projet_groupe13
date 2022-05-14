@@ -25,7 +25,7 @@ $('#connexion_button').click((e) => {
         let p = $('#password1').val().hashCode();
         response.forEach((user) => {
             if (u == user.username && p == user.password) {
-                document.cookie = `id=${user.id}`;
+                setCookie("id", user.id, 1);
                 window.location.href = (user.role == 'admin') ? './admin.html' : './election_utilisateur.html';
                 return;
             }
@@ -38,6 +38,19 @@ $('#newacc_button').click((e) => {
     window.location.href = "./creation.html";
 });
 
+
+//cookies handling
+function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+//hash
 String.prototype.hashCode = function() {
     var hash = 0,
         i, chr;
