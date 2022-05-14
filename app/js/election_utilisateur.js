@@ -22,19 +22,33 @@ function createCard(election, passe) {
     $(`#elections_${((passe) ? 'passees' : 'en_cours')}`).append(
         `<div class="electionCard">
             <p>${election.titre}</p>
-            <button class="results">Résultats !</button>
+            ${((passe) ? '<p>"gif gagnant"</p>' : '<button class="participer">Participer</button>')}
         </div>`
     );
 }
 showElectionsInvite();
 
 
-
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
 
 function openForm() { //ouvrir le form de déconnexion
     document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() { //et le fermer 
+}
+
+function closeForm() { //et le fermer 
     document.getElementById("myForm").style.display = "none";
-  }
+}

@@ -17,10 +17,11 @@ function createCard(election) {
         `<div class="electionCard">
             <p>${election.titre}</p>
             <button class="modifier">Modifier</button>
-            <button class="fermer">Fermer</button>
+            <button class="supprimer">Supprimer</button>
         </div>`
     );
 }
+
 $("#creation_bouton").click((e) => {
     window.location.href = "./admin_creation.html"
 });

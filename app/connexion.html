@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Connexion</title>
-    <link rel="stylesheet" href="./style/main.css"/>
-  </head>
-      <header>
-          <div class="head">
-            <div id="titre_site">
-              BEST GIF
-            </div>
-          </div>
-      </header>
-      <main>
-    <div class="create">
-      <img id="acc" src="./img/myacc.png">
-      <form id="inscrire">
-        <div id="cred">
-          <div>
-            <label for="identifier">Nom d'utilisateur</label>
-            <input type="text" id="identifier2" name="id2" size="20"/>
-          </div>
-          <div>
-            <label for="password1">Mot de passe</label>
-            <input type="password" id="password1" name="mdp1"/>
-          </div>
-        </div>
-        <div id="newacc">
-          <input type="submit" value="Nouveau compte" />
-        </div>
-        <div id="connexion">
-          <input type="submit" value="Connexion" />
+    <link rel="stylesheet" href="./style/main.css" />
+</head>
+<header>
+    <div class="head">
+        <div id="titre_site">
+            BEST GIF
         </div>
     </div>
-    </main>
+</header>
+<main>
+    <div class="create">
+        <img id="acc" src="./img/myacc.png">
+        <div id="inscrire">
+            <div id="cred">
+                <div>
+                    <label for="identifier">Nom d'utilisateur</label>
+                    <input type="text" id="identifier2" required="required" name="id2" size="20" />
+                </div>
+                <div>
+                    <label for="password1">Mot de passe</label>
+                    <input type="password" id="password1" required="required" name="mdp1" />
+                </div>
+            </div>
+            <div id="newacc">
+                <button id="newacc_button">Nouveau compte</button>
+            </div>
+            <div id="connexion">
+                <button id="connexion_button">Connexion</button>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="./js/user_manager.js"></script>
+
 </html>
