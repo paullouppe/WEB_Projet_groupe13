@@ -8,6 +8,19 @@ function showElectionsAdmin() {
     $.ajax(settings).done(function(response) {
         response.forEach(election => {
             createCard(election);
+            $(".supprimer").each(function() {
+                $(this).click(function() {
+                    var settings = {
+                        "url": `http://bestgifapi-env.eba-mqsauu4a.us-east-1.elasticbeanstalk.com/api/election/${$(this).attr('id')}`,
+                        "method": "DELETE",
+                        "timeout": 0,
+                    };
+
+                    $.ajax(settings).done(function(response) {
+                        console.log(response);
+                    });
+                });
+            });
         });
     });
 }
@@ -17,7 +30,7 @@ function createCard(election) {
         `<div class="electionCard">
             <p>${election.titre}</p>
             <button class="modifier">Modifier</button>
-            <button class="supprimer">Supprimer</button>
+            <button id=${election.id} class="supprimer">Supprimer</button>
         </div>`
     );
 }
@@ -25,9 +38,12 @@ function createCard(election) {
 $("#creation_bouton").click((e) => {
     window.location.href = "./admin_creation.html"
 });
+
 showElectionsAdmin();
 
-
+$("#btn_deconnexion").click((e) => {
+    window.location.href = "./connexion.html"
+})
 
 function openForm() { //ouvrir le form de déconnexion
     document.getElementById("myForm").style.display = "block";

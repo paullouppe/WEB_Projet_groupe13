@@ -48,6 +48,11 @@ function eraseCookie(name) {
     document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
+//popup
+$("#btn_deconnexion").click((e) => {
+    window.location.href = "./connexion.html"
+})
+
 function openForm() { //ouvrir le form de déconnexion
     document.getElementById("myForm").style.display = "block";
 }

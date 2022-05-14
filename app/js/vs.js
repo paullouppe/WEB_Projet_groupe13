@@ -1,3 +1,15 @@
+//Versus
+
+
+
+
+
+
+//popup
+$("#btn_deconnexion").click((e) => {
+    window.location.href = "./connexion.html"
+})
+
 function openForm() { //ouvrir le form de déconnexion
     document.getElementById("myForm").style.display = "block";
 }
