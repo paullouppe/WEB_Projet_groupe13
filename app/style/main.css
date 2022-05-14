@@ -303,10 +303,29 @@ button:active {
 #choix2 {
     height: 230px;
     text-align: center;
-    background-color: var(--background);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
     font-weight: bold;
+}
+
+#choix1{                /*couleurs carte 1 et 2, j'ai séparé quand même*/
+    background-color: var(--accent-blue);
+}
+#choix2{
+    background-color: var(--accent-green);
+}
+
+#choix1 > button{
+    background-color:var(--header);            /* modif des boutons pour pas qu'ils soient violets c'est mieux*/
+}
+#choix1 > button:hover{
+    background-color:black;
+}
+#choix2 > button{
+    background-color:var(--header);            /* modif des boutons choix 2*/
+}
+#choix2 > button:hover{
+    background-color:black;
 }
