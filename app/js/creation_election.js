@@ -7,19 +7,27 @@ $('#add_gif').click((e) => {
 });
 
 $("#submit_bouton").click((e) => {
-    let candidats = "";
-    let i = 0;
-    $(".candidats").each(function() {
-        candidats += `&candidat[${i}][url]="${encodeURIComponent($(this).val())}"&candidat[${i}][score]=0`;
-        i++;
-    });
-    console.log(candidats);
-    var settings = {
-        "url": `http://bestgifapi-env.eba-mqsauu4a.us-east-1.elasticbeanstalk.com/api/election?titre=${$("#titre").val()}&datedebut=${$("#datedebut").val()}&datefin=${$("#datefin").val()}&${candidats}`,
+    var settings1 = {
+        "url": `http://bestgifapi-env.eba-mqsauu4a.us-east-1.elasticbeanstalk.com/api/election?titre=${$("#titre").val()}&datedebut=${$("#datedebut").val()}&datefin=${$("#datefin").val()}`,
         "method": "POST",
         "timeout": 0,
     };
-    $.ajax(settings).done(function(response) {
-        window.location.href = "./admin.html"
+    $.ajax(settings1).done(function(response) {
+        let i = 0;
+        $(".candidats").each(function() {
+            var settings2 = {
+                "url": `http://bestgifapi-env.eba-mqsauu4a.us-east-1.elasticbeanstalk.com/api/candidat?url=${encodeURIComponent($(this).val())}&id=${response.id}`,
+                "method": "POST",
+                "timeout": 0,
+            };
+            console.log(settings2.url);
+
+            $.ajax(settings2).done(function(response) {
+                i++;
+                if (i == $(".candidats").length) {
+                    window.location.href = "./admin.html";
+                }
+            });
+        });
     });
 });
