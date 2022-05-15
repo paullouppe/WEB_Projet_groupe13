@@ -10,10 +10,10 @@ $("#submit_bouton").click((e) => {
     let candidats = "";
     let i = 0;
     $(".candidats").each(function() {
-        candidats += `&candidat[${i}][url]=${$(this).val()}&candidat[${i}][score]=0`;
+        candidats += `&candidat[${i}][url]="${encodeURIComponent($(this).val())}"&candidat[${i}][score]=0`;
         i++;
     });
-
+    console.log(candidats);
     var settings = {
         "url": `http://bestgifapi-env.eba-mqsauu4a.us-east-1.elasticbeanstalk.com/api/election?titre=${$("#titre").val()}&datedebut=${$("#datedebut").val()}&datefin=${$("#datefin").val()}&${candidats}`,
         "method": "POST",

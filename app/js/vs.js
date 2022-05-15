@@ -30,7 +30,7 @@ function updateAffichage(candidat1, candidat2, response) {
 }
 
 function vote(candidat, response) {
-    /*let newscore = candidat.score + 1;
+    let newscore = candidat.score + 1;
     var settings = {
         "url": "http://bestgifapi-env.eba-mqsauu4a.us-east-1.elasticbeanstalk.com/api/candidat/" + candidat.id + "?score=" + newscore,
         "method": "PUT",
@@ -38,13 +38,12 @@ function vote(candidat, response) {
     };
 
     $.ajax(settings).done(function(res) {
-    });*/
-    if (i > (response.candidats.length * 2)) {
-        window.location.href = "./election_utilisateur.html";
-    } else {
-        updateAffichage(response.candidats[Math.floor(Math.random() * response.candidats.length)], response.candidats[Math.floor(Math.random() * response.candidats.length)], response);
-    }
-
+        if (i > (response.candidats.length * 2)) {
+            window.location.href = "./election_utilisateur.html";
+        } else {
+            updateAffichage(response.candidats[Math.floor(Math.random() * response.candidats.length)], response.candidats[Math.floor(Math.random() * response.candidats.length)], response);
+        }
+    });
 }
 
 
